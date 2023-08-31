@@ -1,0 +1,1376 @@
+hris.briggs@G4M0124:~$ cd 
+.cache/           Desktop/          Downloads/        .gsutil/          Music/            .nvm/             Public/           Templates/        Videos/           
+.cert/            Development/      .gnupg/           .local/           node_modules/     Pictures/         snap/             test/             .vscode/          
+.config/          Documents/        google-cloud-sdk/ .mozilla/         .npm/             .pki/             .ssh/             .thunderbird/     .zoom/            
+chris.briggs@G4M0124:~$ cd 
+.cache/           Desktop/          Downloads/        .gsutil/          Music/            .nvm/             Public/           Templates/        Videos/           
+.cert/            Development/      .gnupg/           .local/           node_modules/     Pictures/         snap/             test/             .vscode/          
+.config/          Documents/        google-cloud-sdk/ .mozilla/         .npm/             .pki/             .ssh/             .thunderbird/     .zoom/            
+chris.briggs@G4M0124:~$ cd Development/
+chris.briggs@G4M0124:~/Development$ ls
+webdriverio-framework
+chris.briggs@G4M0124:~/Development$ cd webdriverio-framework/
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ ls
+config                 docker-compose.yml  docs           logs          package.json       pages      reports      tests
+docker-compose.ci.yml  Dockerfile          jsconfig.json  node_modules  package-lock.json  README.md  screenshots  utils
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:00:04.819Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:22 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:14:56.699Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] Error in "United Kingdom - Desktop - Header Menu.Gear4Music Logo - @smoke.clicks the Gear4music logo and is returned to the Home Page"
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: "https://www.gear4music.com/"
+Received: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:30:24)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] Error in "United Kingdom - Desktop - Header Menu.Search - @smoke.searches for MT1 product code and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:118:44)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] Error in "United Kingdom - Desktop - Header Menu.Search - @smoke.searches for MT1 product ID and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:124:44)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] Error in "United Kingdom - Desktop - Header Menu.Quick search.searches for MT1 product code and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:148:44)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] Error in "United Kingdom - Desktop - Header Menu.Quick search.searches for MT1 product ID and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:155:44)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+^C
+
+Ending WebDriver sessions gracefully ...
+(press ctrl+c again to hard kill the runner)
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:46 
+
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ git remote -v
+origin	git@github.com:chrisbg4m/webdriverio-framework.git (fetch)
+origin	git@github.com:chrisbg4m/webdriverio-framework.git (push)
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ git remote add upstream git@github.com:Gear4music/webdriverio-framework.git
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ git remote -v
+origin	git@github.com:chrisbg4m/webdriverio-framework.git (fetch)
+origin	git@github.com:chrisbg4m/webdriverio-framework.git (push)
+upstream	git@github.com:Gear4music/webdriverio-framework.git (fetch)
+upstream	git@github.com:Gear4music/webdriverio-framework.git (push)
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ git pull upstream master
+remote: Enumerating objects: 833, done.
+remote: Counting objects: 100% (796/796), done.
+remote: Compressing objects: 100% (296/296), done.
+remote: Total 717 (delta 515), reused 608 (delta 421), pack-reused 0
+Receiving objects: 100% (717/717), 131.23 KiB | 235.00 KiB/s, done.
+Resolving deltas: 100% (515/515), completed with 53 local objects.
+From github.com:Gear4music/webdriverio-framework
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> upstream/master
+Updating 7b48d34..59af53c
+Fast-forward
+ README.md                                          | 154 ++++++++++++++++++++++------------
+ config/av/smoke/desktop.conf.js                    |  25 ++++++
+ config/av/smoke/mobile.conf.js                     |  24 ++++++
+ config/av/standard/desktop.conf.js                 |  25 ++++++
+ config/av/standard/mobile.conf.js                  |  24 ++++++
+ config/av/windows/smoke/desktop.conf.js            |  23 ++++++
+ config/av/windows/smoke/mobile.conf.js             |  21 +++++
+ config/av/windows/standard/desktop.conf.js         |  23 ++++++
+ config/av/windows/standard/mobile.conf.js          |  21 +++++
+ config/{ => g4m}/returns/desktop.conf.js           |   4 +-
+ config/{ => g4m}/returns/mobile.conf.js            |   4 +-
+ config/g4m/smoke/desktop.conf.js                   |  12 +++
+ config/g4m/smoke/mobile.conf.js                    |  12 +++
+ config/{ => g4m/standard}/desktop.conf.js          |  16 ++--
+ config/{ => g4m/standard}/google.conf.js           |   8 +-
+ config/g4m/standard/mobile.conf.js                 |  25 ++++++
+ config/g4m/windows/smoke/desktop.conf.js           |  23 ++++++
+ config/g4m/windows/smoke/mobile.conf.js            |  21 +++++
+ config/g4m/windows/standard/desktop.conf.js        |  23 ++++++
+ config/g4m/windows/standard/mobile.conf.js         |  21 +++++
+ config/mobile.conf.js                              |  23 ------
+ config/smoke/desktop.conf.js                       |  31 -------
+ config/smoke/mobile.conf.js                        |  25 ------
+ config/templates/master.conf.js                    |  31 ++++---
+ config/windows/desktop.conf.js                     |  26 ------
+ config/windows/mobile.conf.js                      |  19 -----
+ config/windows/smokeDesktop.conf.js                |  32 --------
+ config/windows/smokeMobile.conf.js                 |  24 ------
+ package.json                                       |  38 +++++----
+ pages/desktop/account.page.js                      |   7 +-
+ pages/desktop/basket.page.js                       |  10 ++-
+ pages/desktop/changePassword.page.js               |   7 +-
+ pages/desktop/contactUs.page.js                    |  41 ++++++++++
+ pages/desktop/footer.page.js                       |  12 ++-
+ pages/desktop/header.page.js                       |  20 +++--
+ pages/desktop/home.page.js                         |  11 ++-
+ pages/desktop/info/returnsAndRefunds.page.js       |   9 +-
+ pages/desktop/listingSearch.page.js                |  17 ++--
+ pages/desktop/login.page.js                        |   8 +-
+ pages/desktop/myAccount/personalDetails.page.js    |   8 +-
+ pages/desktop/myAccount/quotations.page.js         |   8 +-
+ pages/desktop/orp-step1.page.js                    |   8 +-
+ pages/desktop/paymentDetails.page.js               |  12 +--
+ pages/desktop/pdp.page.js                          |  31 ++++---
+ pages/desktop/plp.page.js                          |   8 +-
+ pages/desktop/vipLogin.page.js                     |   8 +-
+ pages/mobile/account.page.js                       |   7 +-
+ pages/mobile/basket.page.js                        |   8 +-
+ pages/mobile/changePassword.page.js                |   7 +-
+ pages/mobile/footer.page.js                        |   6 ++
+ pages/mobile/header.page.js                        |   9 +-
+ pages/mobile/home.page.js                          |  10 ++-
+ pages/mobile/info/returnsAndRefunds.page.js        |   8 +-
+ pages/mobile/listingSearch.page.js                 |   7 +-
+ pages/mobile/login.page.js                         |   8 +-
+ pages/mobile/myAccount/personalDetails.page.js     |   7 +-
+ pages/mobile/orp-step1.page.js                     |   8 +-
+ pages/mobile/paymentDetails.page.js                |  12 +--
+ pages/mobile/pdp.page.js                           |  26 +++---
+ pages/mobile/plp.page.js                           |   8 +-
+ pages/mobile/quotations.page.js                    |   8 +-
+ pages/mobile/vipLogin.page.js                      |   9 +-
+ tests/data/addresses.data.js                       |  25 ++++++
+ tests/data/av/plp.data.js                          |   7 ++
+ tests/data/av/products.data.js                     |  14 ++++
+ tests/data/av/searchTerms.data.js                  |  10 +++
+ tests/data/domain.data.js                          |  40 +++++++++
+ tests/data/g4m/plp.data.js                         |   9 ++
+ tests/data/{ => g4m}/products.data.js              |   7 +-
+ tests/data/g4m/searchTerms.data.js                 |  10 +++
+ tests/data/users.data.js                           |  69 ++++++++++++++++
+ tests/data/website.data.js                         | 246 -------------------------------------------------------
+ tests/desktop/applePay.spec.js                     | 221 +++++++++++++++++++++++++------------------------
+ tests/desktop/av/basket.spec.js                    |  31 +++++++
+ tests/desktop/av/contactUs.spec.js                 |  21 +++++
+ tests/desktop/av/footer.spec.js                    |  30 +++++++
+ tests/desktop/av/header.spec.js                    |  19 +++++
+ tests/desktop/av/pdp.spec.js                       |  21 +++++
+ tests/desktop/av/serviceCategorySelection.spec.js  |  20 +++++
+ tests/desktop/basket.spec.js                       | 465 +++++++++++++++++++++++++++++++------------------------------------------------------------------------
+ tests/desktop/contactUs.spec.js                    |  32 ++++++++
+ tests/desktop/cookies.spec.js                      |  35 ++++----
+ tests/desktop/footer.spec.js                       | 117 ++++++++++++--------------
+ tests/desktop/g4m/basket.spec.js                   | 124 ++++++++++++++++++++++++++++
+ tests/desktop/g4m/contactUs.spec.js                |  21 +++++
+ tests/desktop/g4m/footer.spec.js                   |  42 ++++++++++
+ tests/desktop/g4m/header.spec.js                   |  35 ++++++++
+ tests/desktop/g4m/home.spec.js                     |  12 +++
+ tests/desktop/g4m/info.spec.js                     |  39 +++++++++
+ tests/desktop/g4m/multiDomain.spec.js              |  66 +++++++++++++++
+ tests/desktop/g4m/paymentDetails.spec.js           | 160 ++++++++++++++++++++++++++++++++++++
+ tests/desktop/g4m/pdp.spec.js                      |  56 +++++++++++++
+ tests/desktop/g4m/plp.spec.js                      | 178 ++++++++++++++++++++++++++++++++++++++++
+ tests/desktop/g4m/serviceCategorySelection.spec.js |  19 +++++
+ tests/desktop/g4m/trustPilot.spec.js               | 133 ++++++++++++++++++++++++++++++
+ tests/desktop/header.spec.js                       | 265 +++++++++++++++++++++++++++--------------------------------
+ tests/desktop/home.spec.js                         |  25 ++----
+ tests/desktop/info.spec.js                         |  42 ----------
+ tests/desktop/login.spec.js                        | 326 ++++++++++++++++++++++++++++++++++++------------------------------------
+ tests/desktop/myAccount.spec.js                    | 332 +++++++++++++++++++++++++++++++++++++-------------------------------------
+ tests/desktop/onlineReturns2.spec.js               | 433 ++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------
+ tests/desktop/paymentDetails.spec.js               | 558 ++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------
+ tests/desktop/pdp.spec.js                          | 372 ++++++++++++++++++++++++++++++++++++++---------------------------------------------
+ tests/desktop/plp.spec.js                          | 181 ----------------------------------------
+ tests/desktop/quotationCheckout.spec.js            |  47 +++++------
+ tests/desktop/serviceCategorySelection.spec.js     |  61 +++++++-------
+ tests/desktop/trustPilot.spec.js                   | 135 ------------------------------
+ tests/desktop/yourDetails.spec.js                  |  73 ++++++++---------
+ tests/google/basket.spec.js                        | 428 ++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------
+ tests/google/header.spec.js                        | 148 ++++++++++++++++-----------------
+ tests/google/home.spec.js                          | 123 +++++++++++++---------------
+ tests/google/pdp.spec.js                           | 567 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------------------------
+ tests/google/plp.spec.js                           | 158 +++++++++++++++++------------------
+ tests/mobile/applePay.spec.js                      | 254 ++++++++++++++++++++++++++++----------------------------
+ tests/mobile/av/basket.spec.js                     |  32 ++++++++
+ tests/mobile/av/burgerMenu.spec.js                 | 149 +++++++++++++++++++++++++++++++++
+ tests/mobile/av/footer.spec.js                     |  26 ++++++
+ tests/mobile/av/header.spec.js                     |  25 ++++++
+ tests/mobile/av/pdp.spec.js                        |  34 ++++++++
+ tests/mobile/av/serviceCategorySelection.spec.js   |  20 +++++
+ tests/mobile/basket.spec.js                        | 379 ++++++++++++++++--------------------------------------------------------------------
+ tests/mobile/burgerMenu.spec.js                    | 166 +++----------------------------------
+ tests/mobile/cookies.spec.js                       |  36 ++++----
+ tests/mobile/footer.spec.js                        |  35 ++++----
+ tests/mobile/g4m/basket.spec.js                    | 143 ++++++++++++++++++++++++++++++++
+ tests/mobile/g4m/burgerMenu.spec.js                | 148 +++++++++++++++++++++++++++++++++
+ tests/mobile/g4m/footer.spec.js                    |  35 ++++++++
+ tests/mobile/g4m/header.spec.js                    |  25 ++++++
+ tests/mobile/g4m/home.spec.js                      |  19 +++++
+ tests/mobile/g4m/info.spec.js                      |  39 +++++++++
+ tests/mobile/g4m/mutliDomain.spec.js               |  58 +++++++++++++
+ tests/mobile/g4m/paymentDetails.spec.js            | 137 +++++++++++++++++++++++++++++++
+ tests/mobile/g4m/pdp.spec.js                       |  42 ++++++++++
+ tests/mobile/g4m/plp.spec.js                       | 189 ++++++++++++++++++++++++++++++++++++++++++
+ tests/mobile/g4m/serviceCategorySelection.spec.js  |  19 +++++
+ tests/mobile/g4m/trustPilot.spec.js                | 134 ++++++++++++++++++++++++++++++
+ tests/mobile/header.spec.js                        | 120 ++++++++++++---------------
+ tests/mobile/home.spec.js                          |  23 ------
+ tests/mobile/info.spec.js                          |  42 ----------
+ tests/mobile/login.spec.js                         | 260 +++++++++++++++++++++++++++++-----------------------------
+ tests/mobile/myAccount.spec.js                     | 210 +++++++++++++++++++++++------------------------
+ tests/mobile/paymentDetails.spec.js                | 466 +++++++++++++++++++++++++++++++++++++++----------------------------------------------------------------
+ tests/mobile/pdp.spec.js                           | 204 ++++++++++++++++++++-------------------------
+ tests/mobile/plp.spec.js                           | 192 -------------------------------------------
+ tests/mobile/quotationCheckout.spec.js             | 128 ++++++++++++++---------------
+ tests/mobile/quotations.spec.js                    |  24 +++---
+ tests/mobile/serviceCategorySelection.spec.js      |  65 +++++++--------
+ tests/mobile/trustPilot.spec.js                    | 136 ------------------------------
+ tests/mobile/yourDetails.spec.js                   |  61 +++++++-------
+ utils/actions.js                                   | 115 +++++++++++---------------
+ utils/applePay.js                                  |  10 +--
+ utils/navigationDesktop.js                         |  41 +++++-----
+ utils/navigationMobile.js                          |  44 +++++-----
+ 153 files changed, 6410 insertions(+), 5614 deletions(-)
+ create mode 100644 config/av/smoke/desktop.conf.js
+ create mode 100644 config/av/smoke/mobile.conf.js
+ create mode 100644 config/av/standard/desktop.conf.js
+ create mode 100644 config/av/standard/mobile.conf.js
+ create mode 100644 config/av/windows/smoke/desktop.conf.js
+ create mode 100644 config/av/windows/smoke/mobile.conf.js
+ create mode 100644 config/av/windows/standard/desktop.conf.js
+ create mode 100644 config/av/windows/standard/mobile.conf.js
+ rename config/{ => g4m}/returns/desktop.conf.js (73%)
+ rename config/{ => g4m}/returns/mobile.conf.js (67%)
+ create mode 100644 config/g4m/smoke/desktop.conf.js
+ create mode 100644 config/g4m/smoke/mobile.conf.js
+ rename config/{ => g4m/standard}/desktop.conf.js (53%)
+ rename config/{ => g4m/standard}/google.conf.js (54%)
+ create mode 100644 config/g4m/standard/mobile.conf.js
+ create mode 100644 config/g4m/windows/smoke/desktop.conf.js
+ create mode 100644 config/g4m/windows/smoke/mobile.conf.js
+ create mode 100644 config/g4m/windows/standard/desktop.conf.js
+ create mode 100644 config/g4m/windows/standard/mobile.conf.js
+ delete mode 100644 config/mobile.conf.js
+ delete mode 100644 config/smoke/desktop.conf.js
+ delete mode 100644 config/smoke/mobile.conf.js
+ delete mode 100644 config/windows/desktop.conf.js
+ delete mode 100644 config/windows/mobile.conf.js
+ delete mode 100644 config/windows/smokeDesktop.conf.js
+ delete mode 100644 config/windows/smokeMobile.conf.js
+ create mode 100644 pages/desktop/contactUs.page.js
+ create mode 100644 tests/data/addresses.data.js
+ create mode 100644 tests/data/av/plp.data.js
+ create mode 100644 tests/data/av/products.data.js
+ create mode 100644 tests/data/av/searchTerms.data.js
+ create mode 100644 tests/data/domain.data.js
+ create mode 100644 tests/data/g4m/plp.data.js
+ rename tests/data/{ => g4m}/products.data.js (74%)
+ create mode 100644 tests/data/g4m/searchTerms.data.js
+ create mode 100644 tests/data/users.data.js
+ delete mode 100644 tests/data/website.data.js
+ create mode 100644 tests/desktop/av/basket.spec.js
+ create mode 100644 tests/desktop/av/contactUs.spec.js
+ create mode 100644 tests/desktop/av/footer.spec.js
+ create mode 100644 tests/desktop/av/header.spec.js
+ create mode 100644 tests/desktop/av/pdp.spec.js
+ create mode 100644 tests/desktop/av/serviceCategorySelection.spec.js
+ create mode 100644 tests/desktop/contactUs.spec.js
+ create mode 100644 tests/desktop/g4m/basket.spec.js
+ create mode 100644 tests/desktop/g4m/contactUs.spec.js
+ create mode 100644 tests/desktop/g4m/footer.spec.js
+ create mode 100644 tests/desktop/g4m/header.spec.js
+ create mode 100644 tests/desktop/g4m/home.spec.js
+ create mode 100644 tests/desktop/g4m/info.spec.js
+ create mode 100644 tests/desktop/g4m/multiDomain.spec.js
+ create mode 100644 tests/desktop/g4m/paymentDetails.spec.js
+ create mode 100644 tests/desktop/g4m/pdp.spec.js
+ create mode 100644 tests/desktop/g4m/plp.spec.js
+ create mode 100644 tests/desktop/g4m/serviceCategorySelection.spec.js
+ create mode 100644 tests/desktop/g4m/trustPilot.spec.js
+ delete mode 100644 tests/desktop/info.spec.js
+ delete mode 100644 tests/desktop/plp.spec.js
+ delete mode 100644 tests/desktop/trustPilot.spec.js
+ create mode 100644 tests/mobile/av/basket.spec.js
+ create mode 100644 tests/mobile/av/burgerMenu.spec.js
+ create mode 100644 tests/mobile/av/footer.spec.js
+ create mode 100644 tests/mobile/av/header.spec.js
+ create mode 100644 tests/mobile/av/pdp.spec.js
+ create mode 100644 tests/mobile/av/serviceCategorySelection.spec.js
+ create mode 100644 tests/mobile/g4m/basket.spec.js
+ create mode 100644 tests/mobile/g4m/burgerMenu.spec.js
+ create mode 100644 tests/mobile/g4m/footer.spec.js
+ create mode 100644 tests/mobile/g4m/header.spec.js
+ create mode 100644 tests/mobile/g4m/home.spec.js
+ create mode 100644 tests/mobile/g4m/info.spec.js
+ create mode 100644 tests/mobile/g4m/mutliDomain.spec.js
+ create mode 100644 tests/mobile/g4m/paymentDetails.spec.js
+ create mode 100644 tests/mobile/g4m/pdp.spec.js
+ create mode 100644 tests/mobile/g4m/plp.spec.js
+ create mode 100644 tests/mobile/g4m/serviceCategorySelection.spec.js
+ create mode 100644 tests/mobile/g4m/trustPilot.spec.js
+ delete mode 100644 tests/mobile/home.spec.js
+ delete mode 100644 tests/mobile/info.spec.js
+ delete mode 100644 tests/mobile/plp.spec.js
+ delete mode 100644 tests/mobile/trustPilot.spec.js
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm install
+npm WARN old lockfile 
+npm WARN old lockfile The package-lock.json file was created with an old version of npm,
+npm WARN old lockfile so supplemental metadata must be fetched from the registry.
+npm WARN old lockfile 
+npm WARN old lockfile This is a one-time fix-up, please be patient...
+npm WARN old lockfile 
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@wdio/sync@7.16.3',
+npm WARN EBADENGINE   required: { node: '>=12.0.0 <16' },
+npm WARN EBADENGINE   current: { node: 'v16.6.2', npm: '7.20.6' }
+npm WARN EBADENGINE }
+
+up to date, audited 618 packages in 9s
+
+59 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm -v
+7.20.6
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:21:22.756Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] Error in "Desktop - Header Menu.Quick search.searches for MT1 product code and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] Error in "Desktop - Header Menu.Quick search.searches for MT1 product ID and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:127:43)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 237104f2e5d1425e0d50fd85138992ab
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Basket Navigation - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the Basket icon and is navigated to an empty basket page
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the Basket icon and is navigated to a populated basket page
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Nav Menu - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ displays the Nav Menu
+[chrome 95.0.4638.69 linux #0-0]        ✓ can navigate to a top-level menu link
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     My Account Navigation - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the 'My Account' icon as a Guest and is naviated to the 'Log In' page
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Trustpilot
+[chrome 95.0.4638.69 linux #0-0]        - Trustpilot is visible
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Search - @smoke
+[chrome 95.0.4638.69 linux #0-0]        - performs a search and results are returned
+[chrome 95.0.4638.69 linux #0-0]        - searches for a brand and redirects to a brand PLP
+[chrome 95.0.4638.69 linux #0-0]        - searches for exact product name
+[chrome 95.0.4638.69 linux #0-0]        - searches for a category name and redirects to a category PLP
+[chrome 95.0.4638.69 linux #0-0]        - searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]        - searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ performs a 'quick-search' and results are returned
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for exact product name
+[chrome 95.0.4638.69 linux #0-0]        ✖ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]        ✖ searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 7 passing (17.9s)
+[chrome 95.0.4638.69 linux #0-0] 2 failing
+[chrome 95.0.4638.69 linux #0-0] 7 skipped
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1) Quick search searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0] expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+[chrome 95.0.4638.69 linux #0-0] Error: expect(received).toHaveLength(expected)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Matcher error: received value must have a length property whose value must be a number
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Received has type:  object
+[chrome 95.0.4638.69 linux #0-0] Received has value: {}
+[chrome 95.0.4638.69 linux #0-0]     at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+[chrome 95.0.4638.69 linux #0-0]     at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+[chrome 95.0.4638.69 linux #0-0]     at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 2) Quick search searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0] expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+[chrome 95.0.4638.69 linux #0-0] Error: expect(received).toHaveLength(expected)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Matcher error: received value must have a length property whose value must be a number
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Received has type:  object
+[chrome 95.0.4638.69 linux #0-0] Received has value: {}
+[chrome 95.0.4638.69 linux #0-0]     at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:127:43)
+[chrome 95.0.4638.69 linux #0-0]     at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+[chrome 95.0.4638.69 linux #0-0]     at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:25 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:32:48.291Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] Error in "Desktop - Header Menu.Quick search.searches for MT1 product code and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 8efdc21c44ae805f1f62171a3b551262
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✖ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 failing (6.6s)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1) Quick search searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0] expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+[chrome 95.0.4638.69 linux #0-0] Error: expect(received).toHaveLength(expected)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Matcher error: received value must have a length property whose value must be a number
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Received has type:  object
+[chrome 95.0.4638.69 linux #0-0] Received has value: {}
+[chrome 95.0.4638.69 linux #0-0]     at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+[chrome 95.0.4638.69 linux #0-0]     at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+[chrome 95.0.4638.69 linux #0-0]     at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:14 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:33:10.015Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] Error in "Desktop - Header Menu.Quick search.searches for MT1 product code and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 22e22cb70d53b2d266607fe3686a7490
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✖ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 failing (5.4s)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1) Quick search searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0] expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+[chrome 95.0.4638.69 linux #0-0] Error: expect(received).toHaveLength(expected)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Matcher error: received value must have a length property whose value must be a number
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Received has type:  object
+[chrome 95.0.4638.69 linux #0-0] Received has value: {}
+[chrome 95.0.4638.69 linux #0-0]     at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+[chrome 95.0.4638.69 linux #0-0]     at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+[chrome 95.0.4638.69 linux #0-0]     at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:13 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:35:59.500Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] Error in "Desktop - Header Menu.Quick search.searches for MT1 product code and expects only 1 result"
+Error: expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+    at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+    at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 608859ec92df7d5e91a654e3c73eaf5b
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✖ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 failing (4.8s)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1) Quick search searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0] expect(received).toHaveLength(expected)
+
+Matcher error: received value must have a length property whose value must be a number
+
+Received has type:  object
+Received has value: {}
+[chrome 95.0.4638.69 linux #0-0] Error: expect(received).toHaveLength(expected)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Matcher error: received value must have a length property whose value must be a number
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Received has type:  object
+[chrome 95.0.4638.69 linux #0-0] Received has value: {}
+[chrome 95.0.4638.69 linux #0-0]     at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:121:43)
+[chrome 95.0.4638.69 linux #0-0]     at Context.executeAsync (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+[chrome 95.0.4638.69 linux #0-0]     at Context.testFrameworkFnWrapper (/home/chris.briggs/Development/webdriverio-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:12 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:39:03.564Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] PASSED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 70f9cdefec30531cd632bea2b1ef181c
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 passing (4.4s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:12 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:40:03.096Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] PASSED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 7cf66c57d56953e1084528e07cad8a91
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 passing (5s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:12 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:40:56.376Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] PASSED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: dd71c0bae0e3982560a52b2f37de1850
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 passing (5.5s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:13 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ node -v
+v16.6.2
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ sudo apt-get remove nodejs
+[sudo] password for chris.briggs: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gyp javascript-common libc-ares2 libjs-inherits libjs-is-typedarray libjs-psl libjs-typedarray-to-buffer libllvm10 libnode-dev libnode64 libpython2-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libssl-dev libuv1-dev nodejs-doc python-pkg-resources python2 python2-minimal python2.7 python2.7-minimal shim
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED
+  node-abbrev node-ajv node-ansi node-ansi-align node-ansi-regex node-ansi-styles node-ansistyles node-aproba node-archy node-are-we-there-yet node-asap node-asn1 node-assert-plus
+  node-asynckit node-aws-sign2 node-aws4 node-balanced-match node-bcrypt-pbkdf node-bl node-bluebird node-boxen node-brace-expansion node-builtin-modules node-builtins node-cacache
+  node-call-limit node-camelcase node-caseless node-chalk node-chownr node-ci-info node-cli-boxes node-cliui node-clone node-co node-color-convert node-color-name node-colors
+  node-columnify node-combined-stream node-concat-map node-concat-stream node-config-chain node-configstore node-console-control-strings node-copy-concurrently node-core-util-is
+  node-cross-spawn node-crypto-random-string node-cyclist node-dashdash node-debug node-decamelize node-decompress-response node-deep-extend node-defaults node-define-properties
+  node-delayed-stream node-delegates node-detect-indent node-detect-newline node-dot-prop node-duplexer3 node-duplexify node-ecc-jsbn node-editor node-encoding node-end-of-stream
+  node-err-code node-errno node-es6-promise node-escape-string-regexp node-execa node-extend node-extsprintf node-fast-deep-equal node-find-up node-flush-write-stream
+  node-forever-agent node-form-data node-from2 node-fs-vacuum node-fs-write-stream-atomic node-fs.realpath node-function-bind node-gauge node-genfun node-get-caller-file
+  node-get-stream node-getpass node-glob node-got node-graceful-fs node-gyp node-har-schema node-har-validator node-has-flag node-has-symbol-support-x node-has-to-string-tag-x
+  node-has-unicode node-hosted-git-info node-http-signature node-iconv-lite node-iferr node-import-lazy node-imurmurhash node-inflight node-inherits node-ini node-invert-kv node-ip
+  node-ip-regex node-is-npm node-is-obj node-is-object node-is-path-inside node-is-plain-obj node-is-retry-allowed node-is-stream node-is-typedarray node-isarray node-isexe
+  node-isstream node-isurl node-jsbn node-json-parse-better-errors node-json-schema node-json-schema-traverse node-json-stable-stringify node-json-stringify-safe node-jsonify
+  node-jsonparse node-jsonstream node-jsprim node-latest-version node-lazy-property node-lcid node-libnpx node-locate-path node-lockfile node-lodash node-lodash-packages
+  node-lowercase-keys node-lru-cache node-make-dir node-mem node-mime node-mime-types node-mimic-fn node-mimic-response node-minimatch node-minimist node-mississippi node-mkdirp
+  node-move-concurrently node-ms node-mute-stream node-nopt node-normalize-package-data node-npm-bundled node-npm-package-arg node-npm-run-path node-npmlog node-number-is-nan
+  node-oauth-sign node-object-assign node-once node-opener node-os-locale node-os-tmpdir node-osenv node-p-cancelable node-p-finally node-p-is-promise node-p-limit node-p-locate
+  node-p-timeout node-package-json node-parallel-transform node-path-exists node-path-is-absolute node-path-is-inside node-performance-now node-pify node-prepend-http
+  node-process-nextick-args node-promise-inflight node-promise-retry node-promzard node-proto-list node-prr node-pseudomap node-psl node-pump node-pumpify node-punycode node-qs
+  node-qw node-rc node-read node-read-package-json node-readable-stream node-registry-auth-token node-registry-url node-request node-require-directory node-require-main-filename
+  node-resolve node-resolve-from node-retry node-rimraf node-run-queue node-safe-buffer node-semver node-semver-diff node-set-blocking node-sha node-shebang-command node-shebang-regex
+  node-signal-exit node-slash node-slide node-sorted-object node-spdx-correct node-spdx-exceptions node-spdx-expression-parse node-spdx-license-ids node-sshpk node-ssri
+  node-stream-each node-stream-iterate node-stream-shift node-strict-uri-encode node-string-decoder node-string-width node-strip-ansi node-strip-eof node-strip-json-comments
+  node-supports-color node-tar node-term-size node-text-table node-through node-through2 node-timed-out node-tough-cookie node-tunnel-agent node-tweetnacl node-typedarray
+  node-typedarray-to-buffer node-uid-number node-unique-filename node-unique-string node-unpipe node-uri-js node-url-parse-lax node-url-to-options node-util-deprecate node-uuid
+  node-validate-npm-package-license node-validate-npm-package-name node-verror node-wcwidth.js node-which node-which-module node-wide-align node-widest-line node-wrap-ansi node-wrappy
+  node-write-file-atomic node-xdg-basedir node-xtend node-y18n node-yallist node-yargs node-yargs-parser nodejs npm
+0 to upgrade, 0 to newly install, 278 to remove and 0 not to upgrade.
+After this operation, 24.7 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 289396 files and directories currently installed.)
+Removing npm (6.14.4+ds-1ubuntu2) ...
+Removing node-gyp (6.1.0-3) ...
+Removing node-nopt (3.0.6-4) ...
+Removing node-abbrev (1.1.1-2) ...
+Removing node-request (2.88.1-4) ...
+Removing node-har-validator (5.1.3-1) ...
+Removing node-ajv (6.10.2-1) ...
+Removing node-ansi (0.3.1-1) ...
+Removing node-boxen (4.2.0-2) ...
+Removing node-ansi-align (3.0.0-1) ...
+Removing node-npmlog (4.1.2-2) ...
+Removing node-gauge (2.7.4-1) ...
+Removing node-libnpx (10.2.1-2) ...
+Removing node-yargs (15.3.0-1) ...
+Removing node-cliui (4.1.0-2) ...
+Removing node-wrap-ansi (4.0.0-2) ...
+Removing node-chalk (2.4.2-1) ...
+Removing node-ansi-styles (4.2.1-1) ...
+Removing node-ansistyles (0.1.3-2) ...
+Removing node-cacache (11.3.3-2) ...
+Removing node-move-concurrently (1.0.1-2) ...
+Removing node-copy-concurrently (1.0.5-4) ...
+Removing node-run-queue (1.0.3-1) ...
+Removing node-aproba (2.0.0-1) ...
+Removing node-archy (1.0.0-3) ...
+Removing node-are-we-there-yet (1.1.5-1) ...
+Removing node-asap (2.0.6-2) ...
+Removing node-http-signature (1.3.2-1) ...
+Removing node-sshpk (1.16.1+dfsg-2) ...
+Removing node-asn1 (0.2.3-2) ...
+Removing node-dashdash (1.14.1-2) ...
+Removing node-jsprim (1.4.1-1) ...
+Removing node-verror (1.10.0-1) ...
+Removing node-form-data (3.0.0-2) ...
+Removing node-asynckit (0.4.0-3) ...
+Removing node-aws-sign2 (0.7.1-2) ...
+Removing node-aws4 (1.9.0-1) ...
+Removing node-fs-vacuum (1.2.10-3) ...
+Removing node-rimraf (2.6.3-1) ...
+Removing node-read-package-json (2.1.1-1) ...
+Removing node-glob (7.1.6-1) ...
+Removing node-minimatch (3.0.4-4) ...
+Removing node-brace-expansion (1.1.11-1) ...
+Removing node-balanced-match (1.0.0-1) ...
+Removing node-bcrypt-pbkdf (1.0.2-1) ...
+Removing node-bl (4.0.0-2) ...
+Removing node-bluebird (3.5.1+dfsg2-2build1) ...
+Removing node-builtin-modules (3.1.0-1) ...
+Removing node-npm-package-arg (6.1.1-1) ...
+Removing node-validate-npm-package-name (3.0.0-1) ...
+Removing node-builtins (1.0.3-1) ...
+Removing node-call-limit (1.1.1-1) ...
+Removing node-yargs-parser (18.1.1-1) ...
+Removing node-camelcase (5.3.1-1) ...
+Removing node-caseless (0.12.0-1) ...
+Removing node-tar (4.4.10+ds1-2ubuntu1) ...
+Removing node-chownr (1.1.3-3) ...
+Removing node-ci-info (2.0.0-1) ...
+Removing node-cli-boxes (2.2.0-2) ...
+Removing node-columnify (1.5.4-1) ...
+Removing node-widest-line (3.1.0-1) ...
+Removing node-co (4.6.0-1) ...
+Removing node-color-convert (1.9.3-1) ...
+Removing node-color-name (1.1.3-1) ...
+Removing node-colors (1.4.0-1) ...
+Removing node-combined-stream (1.0.8-1) ...
+Removing node-concat-map (0.0.1-2) ...
+Removing node-mississippi (3.0.0-1) ...
+Removing node-concat-stream (1.6.2-1) ...
+Removing node-config-chain (1.1.12-1) ...
+Removing node-configstore (5.0.1-1) ...
+Removing node-console-control-strings (1.1.0-1) ...
+Removing node-through2 (3.0.1-2) ...
+Removing node-term-size (1.2.0+dfsg-2) ...
+Removing node-os-locale (4.0.0-1) ...
+Removing node-execa (0.10.0+dfsg-1) ...
+Removing node-cross-spawn (5.1.0-2) ...
+Removing node-unique-string (1.0.0-1) ...
+Removing node-crypto-random-string (1.0.0-1) ...
+Removing node-parallel-transform (1.1.0-2) ...
+Removing node-cyclist (1.0.1-2) ...
+Removing node-debug (4.1.1-2) ...
+Removing node-decamelize (1.2.0-1) ...
+Removing node-latest-version (3.1.0-1) ...
+Removing node-package-json (4.0.1-1) ...
+Removing node-got (7.1.0-1) ...
+Removing node-decompress-response (3.3.0-1) ...
+Removing node-registry-url (3.1.0-1) ...
+Removing node-registry-auth-token (3.3.1-1) ...
+Removing node-rc (1.2.8-1) ...
+Removing node-deep-extend (0.6.0-1) ...
+Removing node-define-properties (1.1.3-1) ...
+Removing node-delayed-stream (1.0.0-4) ...
+Removing node-delegates (1.0.0-1) ...
+Removing node-detect-indent (5.0.0-1) ...
+Removing node-detect-newline (2.1.0-1) ...
+Removing node-dot-prop (5.2.0-1) ...
+Removing node-duplexer3 (0.1.4-5) ...
+Removing node-pumpify (2.0.1-1) ...
+Removing node-duplexify (4.1.1-1) ...
+Removing node-ecc-jsbn (0.2.0-2) ...
+Removing node-editor (1.0.0-1) ...
+Removing node-encoding (0.1.12-3) ...
+Removing node-stream-each (1.2.3-1) ...
+Removing node-get-stream (4.1.0-1) ...
+Removing node-pump (3.0.0-2) ...
+Removing node-end-of-stream (1.4.4-1) ...
+Removing node-promise-retry (1.1.1-4) ...
+Removing node-err-code (2.0.0+dfsg-1) ...
+Removing node-errno (0.1.7-1) ...
+Removing node-es6-promise (4.2.8-6) ...
+Removing node-escape-string-regexp (1.0.5-1) ...
+Removing node-extend (3.0.2-1) ...
+Removing node-extsprintf (1.3.0-1) ...
+Removing node-fast-deep-equal (1.1.0-1) ...
+Removing node-find-up (4.1.0-2) ...
+Removing node-flush-write-stream (2.0.0-2) ...
+Removing node-forever-agent (0.6.1-2) ...
+Removing node-from2 (2.3.0-1) ...
+Removing node-fs-write-stream-atomic (1.0.10-4) ...
+Removing node-fs.realpath (1.0.0-1) ...
+Removing node-function-bind (1.1.1+repack-1) ...
+Removing node-genfun (5.0.0-1) ...
+Removing node-get-caller-file (1.0.2-1) ...
+Removing node-getpass (0.1.7-1) ...
+Removing node-sha (3.0.0-1) ...
+Removing node-graceful-fs (4.2.3-2) ...
+Removing node-har-schema (2.0.0-3) ...
+Removing node-supports-color (6.1.0-2) ...
+Removing node-has-flag (4.0.0-1) ...
+Removing node-isurl (4.0.1-2) ...
+Removing node-has-to-string-tag-x (1.4.1+dfsg-1) ...
+Removing node-has-symbol-support-x (1.4.1+dfsg-1) ...
+Removing node-has-unicode (2.0.1-2) ...
+Removing node-hosted-git-info (2.8.5-1) ...
+Removing node-iconv-lite (0.4.23-1) ...
+Removing node-iferr (1.0.2-1) ...
+Removing node-import-lazy (3.0.0.REALLY.2.1.0-1) ...
+Removing node-write-file-atomic (3.0.3-1) ...
+Removing node-unique-filename (1.1.1+ds-1) ...
+Removing node-imurmurhash (0.1.4-1) ...
+Removing node-inflight (1.0.6-1) ...
+Removing node-ini (1.3.5-1) ...
+Removing node-lcid (1.0.0-1) ...
+Removing node-invert-kv (1.0.0-1) ...
+Removing node-ip (1.1.5-5) ...
+Removing node-tough-cookie (3.0.0-1) ...
+Removing node-ip-regex (4.1.0-2) ...
+Removing node-is-npm (1.0.0-1) ...
+Removing node-is-obj (1.0.1-2) ...
+Removing node-is-object (1.0.1-1) ...
+Removing node-is-path-inside (1.0.1-1) ...
+Removing node-is-plain-obj (1.1.0-1) ...
+Removing node-is-retry-allowed (1.1.0-1) ...
+Removing node-is-stream (1.1.0-1) ...
+Removing node-typedarray-to-buffer (3.0.3-3) ...
+Removing node-is-typedarray (1.0.0-2) ...
+Removing node-which (2.0.2-1) ...
+Removing node-isexe (2.0.0-4) ...
+Removing node-isstream (0.1.2+dfsg-1) ...
+Removing node-jsbn (1.1.0-1) ...
+Removing node-json-parse-better-errors (1.0.2-2) ...
+Removing node-json-schema (0.2.3-1) ...
+Removing node-json-schema-traverse (0.3.1-1) ...
+Removing node-json-stable-stringify (1.0.1-1) ...
+Removing node-json-stringify-safe (5.0.1+repack-2) ...
+Removing node-jsonify (0.0.0-1) ...
+Removing node-jsonstream (1.3.5-1) ...
+Removing node-jsonparse (1.3.1-7) ...
+Removing node-lazy-property (1.0.0-3) ...
+Removing node-locate-path (5.0.0-2) ...
+Removing node-lockfile (1.0.4-3) ...
+Removing node-lodash (4.17.15+dfsg-2) ...
+Removing node-lodash-packages (4.17.15+dfsg-2) ...
+Removing node-lowercase-keys (2.0.0-1) ...
+Removing node-lru-cache (5.1.1-5) ...
+Removing node-make-dir (3.0.2-1) ...
+Removing node-mem (1.1.0-1) ...
+Removing node-mime-types (2.1.25-1) ...
+Removing node-mime (2.4.4+dfsg-1) ...
+Removing node-mimic-fn (3.0.0-1) ...
+Removing node-mimic-response (2.1.0-1) ...
+Removing node-minimist (1.2.5-1) ...
+Removing node-mkdirp (0.5.1-2) ...
+Removing node-ms (2.1.1-1) ...
+Removing node-promzard (0.3.0-1) ...
+Removing node-read (1.0.7-2) ...
+Removing node-mute-stream (0.0.8-2) ...
+Removing node-normalize-package-data (2.5.0-1) ...
+Removing node-npm-bundled (1.1.1-1) ...
+Removing node-npm-run-path (2.0.2-2) ...
+Removing node-number-is-nan (2.0.0-1) ...
+Removing node-oauth-sign (0.9.0-2) ...
+Removing node-object-assign (4.1.1-3) ...
+Removing node-once (1.4.0-3) ...
+Removing node-opener (1.5.1-1) ...
+Removing node-os-tmpdir (1.0.2-1) ...
+Removing node-osenv (0.1.5-1) ...
+Removing node-p-cancelable (0.3.0-1) ...
+Removing node-p-timeout (1.2.0-1) ...
+Removing node-p-finally (1.0.0-2) ...
+Removing node-p-is-promise (3.0.0-1) ...
+Removing node-p-locate (2.0.0-1) ...
+Removing node-p-limit (2.2.2-1) ...
+Removing node-path-exists (4.0.0-2) ...
+Removing node-path-is-absolute (2.0.0-1) ...
+Removing node-path-is-inside (1.0.2-1) ...
+Removing node-performance-now (2.1.0+debian-1) ...
+Removing node-pify (3.0.0-1) ...
+Removing node-url-parse-lax (1.0.0-1) ...
+Removing node-prepend-http (2.0.0-1) ...
+Removing node-promise-inflight (1.0.1-1) ...
+Removing node-proto-list (1.2.4-1) ...
+Removing node-prr (1.0.1-1) ...
+Removing node-pseudomap (1.0.2-1) ...
+Removing node-psl (1.7.0+ds-1) ...
+Removing node-uri-js (4.2.2+dfsg-5) ...
+Removing node-punycode (2.1.1-3) ...
+Removing node-qs (6.9.1+ds-1) ...
+Removing node-qw (1.0.1-1) ...
+Removing node-require-directory (2.1.1-1) ...
+Removing node-require-main-filename (1.0.1-1) ...
+Removing node-resolve (1.15.1-3) ...
+Removing node-resolve-from (4.0.0-1) ...
+Removing node-retry (0.12.0-1) ...
+Removing node-tunnel-agent (0.6.1-2) ...
+Removing node-semver-diff (2.1.0-2) ...
+Removing node-semver (7.1.3-1) ...
+Removing node-set-blocking (2.0.0-1) ...
+Removing node-shebang-command (1.2.0-1) ...
+Removing node-shebang-regex (2.0.0-1) ...
+Removing node-signal-exit (3.0.2-1) ...
+Removing node-slash (3.0.0-1) ...
+Removing node-slide (1.1.6-2) ...
+Removing node-sorted-object (2.0.1-1) ...
+Removing node-validate-npm-package-license (3.0.4-1) ...
+Removing node-spdx-correct (3.1.0-1) ...
+Removing node-spdx-expression-parse (3.0.0-1) ...
+Removing node-spdx-exceptions (2.2.0-1) ...
+Removing node-spdx-license-ids (3.0.5-1) ...
+Removing node-ssri (7.1.0-2) ...
+Removing node-stream-iterate (1.2.0-4) ...
+Removing node-stream-shift (1.0.0-1) ...
+Removing node-strict-uri-encode (2.0.0-1) ...
+Removing node-strip-eof (1.0.0-2) ...
+Removing node-strip-json-comments (3.0.1-3) ...
+Removing node-text-table (0.2.0-2) ...
+Removing node-through (2.3.8-1) ...
+Removing node-timed-out (4.0.1-5) ...
+Removing node-tweetnacl (1.0.1+dfsg-2) ...
+Removing node-typedarray (0.0.6-1) ...
+Removing node-uid-number (0.0.6-1ubuntu0.20.04.1) ...
+Removing node-unpipe (1.0.0-1) ...
+Removing node-url-to-options (1.0.1-1) ...
+Removing node-uuid (3.3.2-2) ...
+Removing node-which-module (2.0.0-1) ...
+Removing node-wide-align (1.1.3-1) ...
+Removing node-wrappy (1.0.2-1) ...
+Removing node-xdg-basedir (3.0.0-1) ...
+Removing node-xtend (4.0.2-1) ...
+Removing node-y18n (4.0.0-2) ...
+Removing node-yallist (4.0.0-1) ...
+Removing node-assert-plus (1.0.0-2) ...
+Removing node-string-width (2.1.1-1) ...
+Removing node-wcwidth.js (1.0.0-1) ...
+Removing node-defaults (1.0.3-1) ...
+Removing node-clone (2.1.2-1) ...
+Removing node-readable-stream (3.4.0-2) ...
+Removing node-core-util-is (1.0.2-1) ...
+Removing node-inherits (2.0.4-1) ...
+Removing node-isarray (2.0.5-1) ...
+Removing node-process-nextick-args (2.0.0-1) ...
+Removing node-string-decoder (1.2.0-2) ...
+Removing node-safe-buffer (5.2.0-1) ...
+Removing node-util-deprecate (1.0.2-1) ...
+Removing node-strip-ansi (6.0.0-2) ...
+Removing node-ansi-regex (5.0.0-1) ...
+Removing nodejs (10.19.0~dfsg-3ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ nodejs -v
+
+Command 'nodejs' not found, but can be installed with:
+
+sudo apt install nodejs
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm -v
+7.20.6
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ node -v
+v16.6.2
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ nvm -ls
+
+Node Version Manager
+
+Note: <version> refers to any version-like string nvm understands. This includes:
+  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+  - default (built-in) aliases: node, stable, unstable, iojs, system
+  - custom aliases you define with `nvm alias foo`
+
+ Any options that produce colorized output should respect the `--no-colors` option.
+
+Usage:
+  nvm --help                                Show this message
+  nvm --version                             Print out the installed version of nvm
+  nvm install [-s] <version>                Download and install a <version>, [-s] from source. Uses .nvmrc if available
+    --reinstall-packages-from=<version>     When installing, reinstall packages installed in <node|iojs|node version number>
+    --lts                                   When installing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When installing, only select from versions for a specific LTS line
+    --skip-default-packages                 When installing, skip the default-packages file if it exists
+    --latest-npm                            After installing, attempt to upgrade to the latest working npm on the given node version
+    --no-progress                           Disable the progress bar on any downloads
+  nvm uninstall <version>                   Uninstall a version
+  nvm uninstall --lts                       Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.
+  nvm uninstall --lts=<LTS name>            Uninstall using automatic alias for provided LTS line, if available.
+  nvm use [--silent] <version>              Modify PATH to use <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm exec [--silent] <version> [<command>] Run <command> on <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm run [--silent] <version> [<args>]     Run `node` on <version> with <args> as arguments. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm current                               Display currently activated version of Node
+  nvm ls                                    List installed versions
+  nvm ls <version>                          List versions matching a given <version>
+  nvm ls-remote                             List remote versions available for install
+    --lts                                   When listing, only show LTS (long-term support) versions
+  nvm ls-remote <version>                   List remote versions available for install, matching a given <version>
+    --lts                                   When listing, only show LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only show versions for a specific LTS line
+  nvm version <version>                     Resolve the given description to a single local version
+  nvm version-remote <version>              Resolve the given description to a single remote version
+    --lts                                   When listing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only select from versions for a specific LTS line
+  nvm deactivate                            Undo effects of `nvm` on current shell
+  nvm alias [<pattern>]                     Show all aliases beginning with <pattern>
+  nvm alias <name> <version>                Set an alias named <name> pointing to <version>
+  nvm unalias <name>                        Deletes the alias named <name>
+  nvm install-latest-npm                    Attempt to upgrade to the latest working `npm` on the current node version
+  nvm reinstall-packages <version>          Reinstall global `npm` packages contained in <version> to current version
+  nvm unload                                Unload `nvm` from shell
+  nvm which [current | <version>]           Display path to installed node version. Uses .nvmrc if available
+  nvm cache dir                             Display path to the cache directory for nvm
+  nvm cache clear                           Empty cache directory for nvm
+
+Example:
+  nvm install 8.0.0                     Install a specific version number
+  nvm use 8.0                           Use the latest available 8.0.x release
+  nvm run 6.10.3 app.js                 Run app.js using node 6.10.3
+  nvm exec 4.8.3 node app.js            Run `node app.js` with the PATH pointing to node 4.8.3
+  nvm alias default 8.1.0               Set default node version on a shell
+  nvm alias default node                Always default to the latest available node version on a shell
+
+Note:
+  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ command -v nvm
+nvm
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ nvm -v
+
+Node Version Manager
+
+Note: <version> refers to any version-like string nvm understands. This includes:
+  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+  - default (built-in) aliases: node, stable, unstable, iojs, system
+  - custom aliases you define with `nvm alias foo`
+
+ Any options that produce colorized output should respect the `--no-colors` option.
+
+Usage:
+  nvm --help                                Show this message
+  nvm --version                             Print out the installed version of nvm
+  nvm install [-s] <version>                Download and install a <version>, [-s] from source. Uses .nvmrc if available
+    --reinstall-packages-from=<version>     When installing, reinstall packages installed in <node|iojs|node version number>
+    --lts                                   When installing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When installing, only select from versions for a specific LTS line
+    --skip-default-packages                 When installing, skip the default-packages file if it exists
+    --latest-npm                            After installing, attempt to upgrade to the latest working npm on the given node version
+    --no-progress                           Disable the progress bar on any downloads
+  nvm uninstall <version>                   Uninstall a version
+  nvm uninstall --lts                       Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.
+  nvm uninstall --lts=<LTS name>            Uninstall using automatic alias for provided LTS line, if available.
+  nvm use [--silent] <version>              Modify PATH to use <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm exec [--silent] <version> [<command>] Run <command> on <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm run [--silent] <version> [<args>]     Run `node` on <version> with <args> as arguments. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm current                               Display currently activated version of Node
+  nvm ls                                    List installed versions
+  nvm ls <version>                          List versions matching a given <version>
+  nvm ls-remote                             List remote versions available for install
+    --lts                                   When listing, only show LTS (long-term support) versions
+  nvm ls-remote <version>                   List remote versions available for install, matching a given <version>
+    --lts                                   When listing, only show LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only show versions for a specific LTS line
+  nvm version <version>                     Resolve the given description to a single local version
+  nvm version-remote <version>              Resolve the given description to a single remote version
+    --lts                                   When listing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only select from versions for a specific LTS line
+  nvm deactivate                            Undo effects of `nvm` on current shell
+  nvm alias [<pattern>]                     Show all aliases beginning with <pattern>
+  nvm alias <name> <version>                Set an alias named <name> pointing to <version>
+  nvm unalias <name>                        Deletes the alias named <name>
+  nvm install-latest-npm                    Attempt to upgrade to the latest working `npm` on the current node version
+  nvm reinstall-packages <version>          Reinstall global `npm` packages contained in <version> to current version
+  nvm unload                                Unload `nvm` from shell
+  nvm which [current | <version>]           Display path to installed node version. Uses .nvmrc if available
+  nvm cache dir                             Display path to the cache directory for nvm
+  nvm cache clear                           Empty cache directory for nvm
+
+Example:
+  nvm install 8.0.0                     Install a specific version number
+  nvm use 8.0                           Use the latest available 8.0.x release
+  nvm run 6.10.3 app.js                 Run app.js using node 6.10.3
+  nvm exec 4.8.3 node app.js            Run `node app.js` with the PATH pointing to node 4.8.3
+  nvm alias default 8.1.0               Set default node version on a shell
+  nvm alias default node                Always default to the latest available node version on a shell
+
+Note:
+  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+bash: export: `[': not a valid identifier
+bash: export: `-s': not a valid identifier
+bash: export: `/home/chris.briggs/.nvm/nvm.sh': not a valid identifier
+bash: export: `]': not a valid identifier
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ which node
+/home/chris.briggs/.nvm/versions/node/v16.6.2/bin/node
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ nvm use 14.17.0
+Now using node v14.17.0 (npm v6.14.13)
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop /home/chris.briggs/Development/webdriverio-framework
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:49:38.856Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] Error in "Desktop - Header Menu.Quick search.searches for MT1 product code and expects only 1 result"
+Error: Expect  to have text containing
+
+Expected: "PP400"
+Received: undefined
+    at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:122:46)
+[0-0] FAILED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: a6ecb0d2af74a4cb7646619924d38d39
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✖ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 failing (30.9s)
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1) Quick search searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0] Expect  to have text containing
+
+Expected: "PP400"
+Received: undefined
+[chrome 95.0.4638.69 linux #0-0] Error: Expect  to have text containing
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] Expected: "PP400"
+[chrome 95.0.4638.69 linux #0-0] Received: undefined
+[chrome 95.0.4638.69 linux #0-0]     at Context.<anonymous> (/home/chris.briggs/Development/webdriverio-framework/tests/desktop/header.spec.js:122:46)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:38 
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! webdriverio-framework@1.0.0 test:desktop: `wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the webdriverio-framework@1.0.0 test:desktop script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chris.briggs/.npm/_logs/2021-11-02T12_50_17_955Z-debug.log
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop /home/chris.briggs/Development/webdriverio-framework
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:50:47.442Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] PASSED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: f37d167a60d5fde746e0eee75ca69c9b
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 1 passing (15.5s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:22 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop /home/chris.briggs/Development/webdriverio-framework
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T12:51:38.442Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] PASSED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 025ff551d8d3c08fc8037c41c560611f
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Basket Navigation - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the Basket icon and is navigated to an empty basket page
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the Basket icon and is navigated to a populated basket page
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Nav Menu - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ displays the Nav Menu
+[chrome 95.0.4638.69 linux #0-0]        ✓ can navigate to a top-level menu link
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     My Account Navigation - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the 'My Account' icon as a Guest and is naviated to the 'Log In' page
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Trustpilot
+[chrome 95.0.4638.69 linux #0-0]        - Trustpilot is visible
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Search - @smoke
+[chrome 95.0.4638.69 linux #0-0]        - performs a search and results are returned
+[chrome 95.0.4638.69 linux #0-0]        - searches for a brand and redirects to a brand PLP
+[chrome 95.0.4638.69 linux #0-0]        - searches for exact product name
+[chrome 95.0.4638.69 linux #0-0]        - searches for a category name and redirects to a category PLP
+[chrome 95.0.4638.69 linux #0-0]        - searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]        - searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ performs a 'quick-search' and results are returned
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for exact product name
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 9 passing (1m 0.3s)
+[chrome 95.0.4638.69 linux #0-0] 7 skipped
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:01:08 
+
+chris.briggs@G4M0124:~/Development/webdriverio-framework$ npm run test:desktop -- --spec=./tests/desktop/header.spec.js
+
+> webdriverio-framework@1.0.0 test:desktop /home/chris.briggs/Development/webdriverio-framework
+> wdio ./config/g4m/standard/desktop.conf.js "--spec=./tests/desktop/header.spec.js"
+
+
+Execution of 1 workers started at 2021-11-02T13:00:59.430Z
+
+[0-0] RUNNING in chrome - /tests/desktop/header.spec.js
+[0-0] PASSED in chrome - /tests/desktop/header.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 95.0.4638.69 linux #0-0] Running: chrome (v95.0.4638.69) on linux
+[chrome 95.0.4638.69 linux #0-0] Session ID: 17ceefc033057779c92a9a1c677d149b
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] » /tests/desktop/header.spec.js
+[chrome 95.0.4638.69 linux #0-0] Desktop - Header Menu
+[chrome 95.0.4638.69 linux #0-0]     Basket Navigation - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the Basket icon and is navigated to an empty basket page
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the Basket icon and is navigated to a populated basket page
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Nav Menu - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ displays the Nav Menu
+[chrome 95.0.4638.69 linux #0-0]        ✓ can navigate to a top-level menu link
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     My Account Navigation - @smoke
+[chrome 95.0.4638.69 linux #0-0]        ✓ clicks the 'My Account' icon as a Guest and is naviated to the 'Log In' page
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Trustpilot
+[chrome 95.0.4638.69 linux #0-0]        - Trustpilot is visible
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Search - @smoke
+[chrome 95.0.4638.69 linux #0-0]        - performs a search and results are returned
+[chrome 95.0.4638.69 linux #0-0]        - searches for a brand and redirects to a brand PLP
+[chrome 95.0.4638.69 linux #0-0]        - searches for exact product name
+[chrome 95.0.4638.69 linux #0-0]        - searches for a category name and redirects to a category PLP
+[chrome 95.0.4638.69 linux #0-0]        - searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]        - searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0]     Quick search
+[chrome 95.0.4638.69 linux #0-0]        ✓ performs a 'quick-search' and results are returned
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for exact product name
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product code and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]        ✓ searches for MT1 product ID and expects only 1 result
+[chrome 95.0.4638.69 linux #0-0]
+[chrome 95.0.4638.69 linux #0-0] 9 passing (55.5s)
+[chrome 95.0.4638.69 linux #0-0] 7 skipped
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:01:02 
