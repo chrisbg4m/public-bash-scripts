@@ -1,6 +1,6 @@
 # public-bash-scripts
 
-Just a dump of scripts that I have cooked up over the years to perform admin tasks.
+Just a dump of scripts that I have cooked up over the years to perform some basic admin tasks.
 
 **Prerequisites/Dependencies**
 

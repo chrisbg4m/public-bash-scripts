@@ -1,16 +1,30 @@
+#!/bin/bash
 
+# Script to install everything you need to run the test automation when setting up a new machine. 
 
-Steps to Install:
+# Author: Chris Briggs
+# Version: 0.1
 
-1. Open Terminal
+# Sets a folder name variable 
 
-2. Create a 'Development' folder in you homespace:
+folder=Development
 
-3. Install Github
+# Creates and navigates into folder called 'Development'
+# This is where all git repos are saved
 
-SECOND STEP
+mkdir -p ~/$folder 
+cd ~/$folder
 
-chris.briggs@G4M0124:~/Development$ sudo apt-get install git
+if [ "$(pwd)" == "/home/$USER/$folder" ]; then
+  echo 'The Development folder has been created successfully'
+else
+  echo 'The Development folder has not been created successfully'
+fi
+
+# Installs Github
+# You will be prompted for your admin password at this stage
+
+sudo apt-get install git
 
 Do you want to continue? [Y/n] Y
 
@@ -18,42 +32,42 @@ COMPLETE
 
 THIRD STEP
 
-chris.briggs@G4M0124:~/Development$ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
 
 FOURTH STEP
 
-chris.briggs@G4M0124:~/Development$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 
 FIFTH STEP
 
-chris.briggs@G4M0124:~/Development$ sudo apt update
+sudo apt update
 
 SIXTH STEP
 
-chris.briggs@G4M0124:~/Development$ sudo apt install gh
+sudo apt install gh
 
 
+#SSH Key Steps
 
-chris.briggs@G4M0124:~/Development$ sudo apt update
+#Generate rsa SSH Key
 
-
-chris.briggs@G4M0124:~/Development$ sudo apt install gh
-
-SSH Key Steps
-
-chris.briggs@G4M0124:~/Development$ ssh-keygen -t rsa
+ssh-keygen -t rsa
 
 Enter file in which to save the key (/home/chris.briggs/.ssh/id_rsa):  [enter]
 Enter passphrase (empty for no passphrase):   [enter]
 Enter same passphrase again:  [enter]
 
+#Open key file and print in command line
 
-chris.briggs@G4M0124:~/Development$ cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJO0BNT8OlimKGxIDL0Oy3xowAv2ZKKM1r/iOO9HTrVzNc6LIvlcDada0VuoK70JFIpWnjsRpACvwtZgVcgfTuyv7q1rj539LwNJJdB2h5AsV1TcPOVHz0r/Ebc8IN81e52uK97jXWZCR0tq2JCzFgYpENVY79mo78S7nIWnSLdVGSglWM9YfQS2cGPyJ474/KVyMSTHPLErfGSYfRjX3oaVmWnmBYKebP9jfbk+WBEz0ThPB+BDkZBw/O7auyBMk+NzDgRiSt4ID620oKkfXaM+emTpyzHRPRCvruOSKUQehauyfid978mEH/vedlZAkyuFOhIVxgqYTbVdh2i/EfHfoxILA1x7SwZ1yhCuHDGGfot2HBtIoCGHwzYweVDEns/+bhWfwHNW2kILIxPH9kEzOsfvHyFHuBKCynqOkpdwx6wd7SE4gRkHbnTPlqLT5EKYwjgV5DaSFXO0nwErsqhiCXAtY+c4gBdd5+cmsdFFWWiVuPx8zWajTNtxDXtHc= 
 
 
 ADD SSH Key to webdriver
+
+# Before this, the user must have forked the origin repository to their own github account
+
 
 
 chris.briggs@G4M0124:~/Development$ git clone git@github.com:chrisbg4m/webdriverio-framework.git
