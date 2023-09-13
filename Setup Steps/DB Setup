@@ -1,0 +1,31 @@
+#DB Connection setup
+
+#check python version
+
+python -v
+
+python2 --version &&
+python3 --version &&
+
+#if installed and version compatible echo to user
+
+echo Python already installed
+
+#if not installed or incompatible, installation cmds below
+
+sudo apt-get install python3.8
+
+#echo installation confirmed to user
+
+echo Python%version% now installed
+
+#initiate gcloud installation
+
+gcloud init &&/
+
+#login confirmation
+
+echo Gcloud installation complete
+
+#
+

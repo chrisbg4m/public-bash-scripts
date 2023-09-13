@@ -1,0 +1,1 @@
+newman run "https://api.getpostman.com/collections/{{collection_uid}}?apikey={{postman_api_key}}" --environment "https://api.getpostman.com/environments/{{environment_uid}}?apikey={{postman_api_key}}" --reporters htmlextra,cli --reporter-htmlextra-omitHeaders
